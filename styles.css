@@ -106,12 +106,13 @@ nav .nav-links li a:hover {
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .hero-buttons .btn,
 .hero-buttons .btn-outline {
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -151,10 +152,10 @@ nav .nav-links li a:hover {
 
 .hero-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -215,22 +216,14 @@ nav .nav-links li a:hover {
 
 .hero-media {
     display: flex;
-    gap: 30px;
     justify-content: center;
+    flex-direction: column;
     margin-top: 40px;
 }
 
-.hero-image img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
 
 .hero-video video {
-    width: 300px;
+    width: 450px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -264,6 +257,13 @@ nav .nav-links li a:hover {
 .stat-box p {
     font-size: 16px;
     color: #f0f0f0;
+}
+
+.stat-box i {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    display: block;
 }
 
 /* Section Styles */
@@ -863,6 +863,67 @@ footer p {
 
     .hamburger {
         display: block;
+    }
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .hero-video video {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .stat-box {
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .stat-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .stat-box p {
+        font-size: 0.6rem;
+    }
+
+    .stat-box i {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
     }
 }
 
