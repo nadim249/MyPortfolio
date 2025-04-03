@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 body {
     background-color: #1a1a1a;
     color: #fff;
-    padding-top: 70px; /* To prevent content from overlapping with the fixed navbar */
+    padding-top: 70px; /* Prevent content overlap with fixed navbar */
 }
 
 /* Header and Navigation */
@@ -19,7 +20,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Floating Navigation Bar */
 nav {
     position: fixed;
     top: 0;
@@ -33,6 +33,7 @@ nav {
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -52,26 +53,11 @@ nav .nav-links li a {
     font-size: 1rem;
     transition: color 0.3s;
 }
+
 nav .nav-links li a:hover {
     color: #00bcd4;
 }
 
-/* Navigation Bar Icons */
-.nav-links li a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.nav-links li a i {
-    font-size: 1.2rem;
-}
-
-/* Hamburger Menu */
 .hamburger {
     display: none;
     font-size: 1.5rem;
@@ -79,6 +65,185 @@ nav .nav-links li a:hover {
     color: #fff;
 }
 
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #27272f, #51525f);
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #ffcc00;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons .btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-3px);
+}
+
+.hero-buttons .btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons .btn-outline:hover {
+    background-color: #fff;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+.hero-video video {
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.stat-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box h3 {
+    font-size: 32px;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+.stat-box i {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-video video {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 10px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .stat-box {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .stat-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .stat-box p {
+        font-size: 0.9rem;
+    }
+
+    .stat-box i {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+}
 
 /* Modern Home Section */
 .hero {
