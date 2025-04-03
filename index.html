@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid Mahmud Nadim - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i> KMN
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#competitive"><i class="fas fa-trophy"></i> Competitive</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Welcome! I'm <span>Khalid Mahmud Nadim</span></h1>
+                    <p>
+                        A passionate <strong>Software Developer</strong> specializing in full-stack development and competitive programming. I enjoy solving complex problems and building innovative solutions that make a difference.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn">Hire Me</a>
+                        <a href="#about" class="btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="hero-image">
+                        <img src="images/profile.jpg" alt="Khalid Mahmud Nadim">
+                    </div>
+                    <div class="hero-video">
+                        <video controls>
+                            <source src="images/intro.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <h3>500+</</h3>
+                    <p>Problems Solved</p>
+                </div>
+                <div class="stat-box">
+                    <h3>3+</</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me <span class="underline"></span></h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/abpr.jpg" alt="About Me">
+            </div>
+            <div class="about-text">
+                <h3>I'm a Professional Software Developer</h3>
+                <p>
+                    I am a Computer Science and Engineering student at American International University Bangladesh with a growing passion for web development and programming.
+                    I have hands-on experience with JavaScript, C++, C#, Oracle Database, Microsoft SQL Server, and CSS, and I am currently focused on enhancing my skills in frontend web development and solving programming questions. 
+                    Additionally, I have a keen interest in digital marketing and Canva design.
+                </p>
+                <p>
+                    I am always eager to learn and explore new technologies that can help me grow both personally and professionally.
+                </p>
+                <div class="tech-grid">
+                    <div>
+                        <p>Programming Languages:</p>
+                        <ul>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Frameworks & Libraries:</p>
+                        <ul>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>.NET Framework</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#education" class="btn">Know More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience Section -->
+    <section id="education" class="section">
+        <h2>Qualification <span class="underline"></span></h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>American International University Bangladesh (AIUB)</p>
+                    <span class="timeline-date">2020 - Present</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Higher Secondary Certificate (HSC)</h3>
+                    <p>Dhaka College</p>
+                    <span class="timeline-date">2018 - 2020</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Secondary School Certificate (SSC)</h3>
+                    <p>Ideal School and College</p>
+                    <span class="timeline-date">2016 - 2018</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills <span class="underline"></span></h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Experienced in creating semantic and accessible web pages using HTML5.</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Proficient in designing responsive and visually appealing layouts with CSS3.</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Skilled in adding interactivity and dynamic functionality to web applications.</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Experienced in building modern, component-based user interfaces with React.</p>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <p>Knowledgeable in building scalable backend services using Node.js.</p>
+            </div>
+            <div class="skill-box">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>Proficient in working with SQL and NoSQL databases like MySQL and MongoDB.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects <span class="underline"></span></h2>
+        <div class="projects-grid">
+            <div class="project-box">
+                <img src="images/project1 (2).png" alt="Project 1">
+                <h3>Interactive Learning platform</h3>
+                <p>This is the project for C# .NET windows Form Application in my university Course(OOP2).</p>
+                <div class="project-buttons">
+                    <a href="https://liveproject1.com" target="_blank" class="btn">Live</a>
+                    <a href="https://github.com/nadim249/InteractiveLearningplatForm_WinApp" target="_blank" class="btn-outline">GitHub</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/project2.png" alt="Project 2">
+                <h3>TaskNest</h3>
+                <p>TaskNesst** is a simple yet powerful To-Do App built with HTML, CSS, and JavaScript, offering task management, reminders, dark mode, and local storage. Stay organized with priority levels, drag-and-drop sorting, and voice input!.</p>
+                <div class="project-buttons">
+                    <a href="https://liveproject2.com" target="_blank" class="btn">Live</a>
+                    <a href="https://github.com/username/project2" target="_blank" class="btn-outline">GitHub</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/project1.png" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A portfolio website showcasing creative design and animations.</p>
+                <div class="project-buttons">
+                    <a href="https://liveproject3.com" target="_blank" class="btn">Live</a>
+                    <a href="https://github.com/username/project3" target="_blank" class="btn-outline">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Programming Section -->
+    <section id="competitive" class="section">
+        <h2>Competitive Programming <span class="underline"></span></h2>
+        <div class="competitive-grid">
+            <div class="comp-box">
+                <img src="images/cf.png" alt="Codeforces Logo">
+                <h3>Codeforces</h3>
+                <p>Participated in numerous contests and solved challenging problems on Codeforces.</p>
+                <p><strong>Rating:</strong> 921</p>
+                <p><strong>Problems Solved:</strong> 100+</p>
+                <a href="https://codeforces.com/profile/nadim249" target="_blank" class="btn">View Profile</a>
+            </div>
+            <div class="comp-box">
+                <img src="images/lt.png" alt="LeetCode Logo">
+                <h3>LeetCode</h3>
+                <p>Practiced data structures and algorithms by solving problems on LeetCode.</p>
+                <p><strong>Rating:</strong> 1421</p>
+                <p><strong>Problems Solved:</strong> 49</p>
+                <a href="https://leetcode.com/nadim249" target="_blank" class="btn">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me <span class="underline"></span></h2>
+        <p>Feel free to reach out to me using the form below:</p>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/nadim249" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/khalid-mahmud-nadim-249s/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Email Me</h3>
+                <p>khalidmahmud249@gmail.com</p>
+            </div>
+        </div>
+        <p>© 2024 Khalid Mahmud Nadim. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
