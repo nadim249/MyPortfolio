@@ -1187,6 +1187,16 @@ footer p {
     font-style: italic;
 }
 
+/* Highlighted GPA/CGPA */
+.highlight {
+    color: #ffcc00; /* Bright yellow to grab attention */
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgba(255, 204, 0, 0.2); /* Subtle background highlight */
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
 /* Responsive Design for Education Section */
 @media (max-width: 768px) {
     .education-timeline {
