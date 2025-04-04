@@ -467,8 +467,9 @@ nav .nav-links li a:hover {
 }
 
 .about-text p {
-    font-size: 16px;
-    color: #ccc;
+    text-align: justify;
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Optional: Adjust text color for better contrast */
     margin-bottom: 20px;
 }
 
@@ -666,12 +667,14 @@ nav .nav-links li a:hover {
     background-color: #2a2a2a;
     padding: 20px;
     border-radius: 10px;
+
 }
 
 .skill-box h3 {
     font-size: 20px;
     margin-bottom: 15px;
 }
+
 
 .skill-box ul {
     list-style: none;
@@ -741,6 +744,7 @@ nav .nav-links li a:hover {
     color: #f0f0f0;
     margin-bottom: 15px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .project-buttons {
