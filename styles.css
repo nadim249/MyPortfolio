@@ -704,14 +704,22 @@ nav .nav-links li a:hover {
 }
 
 .project-box {
-    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures consistent spacing */
+    align-items: center;
+    background-color: #2A2A2A;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%; /* Ensures all cards have the same height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-box:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project-box img {
@@ -723,16 +731,53 @@ nav .nav-links li a:hover {
 }
 
 .project-box h3 {
-    font-size: 20px;
-    color: #00cc00;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #FFCC00;
 }
 
 .project-box p {
-    font-size: 16px;
-    color: #ccc;
+    font-size: 1rem;
+    color: #f0f0f0;
     margin-bottom: 15px;
     line-height: 1.6;
+}
+
+.project-buttons {
+    margin-top: auto; /* Pushes the buttons to the bottom */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-buttons .btn,
+.project-buttons .btn-outline {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-buttons .btn {
+    background-color: #00cc00;
+    color: #fff;
+}
+
+.project-buttons .btn:hover {
+    background-color: #00b300;
+}
+
+.project-buttons .btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.project-buttons .btn-outline:hover {
+    background-color: #fff;
+    color: #333;
 }
 
 /* Competitive Programming Section */
@@ -1363,11 +1408,16 @@ footer p {
 }
 
 .project-box {
-    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures consistent spacing */
+    align-items: center;
+    background-color: #2A2A2A;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 100%; /* Ensures all cards have the same height */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1387,17 +1437,18 @@ footer p {
 .project-box h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #ffcc00;
+    color: #FFCC00;
 }
 
 .project-box p {
     font-size: 1rem;
-    color: #ccc;
+    color: #f0f0f0;
     margin-bottom: 15px;
     line-height: 1.6;
 }
 
 .project-buttons {
+    margin-top: auto; /* Pushes the buttons to the bottom */
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -1436,17 +1487,30 @@ footer p {
 /* Responsive Design for Projects Section */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 15px; /* Reduce gap between items */
+    }
+
+    .project-box {
+        padding: 15px; /* Reduce padding for smaller screens */
     }
 
     .project-box img {
-        height: 120px;
+        height: 120px; /* Reduce image height for smaller screens */
+    }
+
+    .project-box h3 {
+        font-size: 1.2rem; /* Adjust font size for headings */
+    }
+
+    .project-box p {
+        font-size: 0.9rem; /* Adjust font size for descriptions */
     }
 
     .project-buttons .btn,
     .project-buttons .btn-outline {
-        font-size: 0.9rem;
-        padding: 8px 15px;
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 15px; /* Reduce button padding */
     }
 }
 
@@ -1471,11 +1535,16 @@ footer p {
 }
 
 .certification-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures consistent spacing */
+    align-items: center;
     background-color: #2A2A2A;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    height: 100%; /* Ensures all cards have the same height */
 }
 
 .certification-box h3 {
@@ -1498,6 +1567,7 @@ footer p {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: auto; /* Pushes the button to the bottom */
 }
 
 .certification-box .btn:hover {
@@ -1520,4 +1590,38 @@ footer p {
     margin-bottom: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Certifications Section */
+@media (max-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 15px; /* Reduce gap between items */
+    }
+
+    .certification-box {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .certification-box h3 {
+        font-size: 1.2rem; /* Adjust font size for headings */
+    }
+
+    .certification-box p {
+        font-size: 0.9rem; /* Adjust font size for descriptions */
+    }
+
+    .pdf-preview {
+        height: 200px; /* Reduce height of PDF previews */
+    }
+
+    .certificate-image {
+        max-width: 100%; /* Ensure images scale properly */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .certification-box .btn {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 15px; /* Reduce button padding */
+    }
 }
