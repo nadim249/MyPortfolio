@@ -141,10 +141,19 @@ nav .nav-links li a:hover {
     transform: translateY(-3px);
 }
 
+.hero-video {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width of the video */
+    margin: 0 auto; /* Center the video */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure the rounded corners apply to the video */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
 .hero-video video {
-    width: 450px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
 }
 
 .hero-stats {
